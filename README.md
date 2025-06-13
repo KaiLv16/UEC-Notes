@@ -6,6 +6,7 @@
 欢迎查阅以下核心笔记文件：  
 [UET-CC.md](Notes/UET-CC.md)  
 
+[Multipath Path Selection](Notes/multipath.md)
 ---
 
-如果你对内容有任何建议或疑问，欢迎提出讨论。
+欢迎讨论，共同提高！
