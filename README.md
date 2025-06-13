@@ -4,7 +4,7 @@
 笔记主要整理了规范中的关键点、理解与分析，方便日后复习和查阅。
 
 欢迎查阅以下核心笔记文件：  
-[UECT-CC.md](Notes/UECT-CC.md)  
+[UET-CC.md](Notes/UET-CC.md)  
 
 ---
 
