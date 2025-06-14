@@ -11,14 +11,14 @@
 | Fabric Communication  | Absolute addressing | 绝对寻址 | 客户端/服务器 任务模型中定位资源的一种寻址方式。包括目的地址的三部分：（1）标识 FEP 的 FA，（2）无 JobID 的 PIDonFEP，（3）资源索引。  |
 |  | Accelerator | 加速器 | 专门设计用于高效执行特定功能的计算模块或设备。   |
 |  | Acknowledgment packet (ACK) | 确认包（ACK） | UET 用于实现可靠性的包，由目的 PDC 发送给源 PDC，表示在 PDS 层成功接收包。ACK 可以携带语义响应。 |
-|  | Best-effort network | 尽力网络 | 网络中的包在某些链路上发送时，发送方与链路端点之间没有显式的缓冲区可用性通信，可能因缓冲不足而丢包。 |
+|  | Best-effort network | 尽力网络 | 与无损网络相对，网络中的包在某些链路上发送时，发送方与链路端点之间没有显式的缓冲区可用性通信，可能因缓冲不足而丢包。 |
 |  | Cluster | 集群   | 由一个或多个 fabric 平面连接的节点集合。 |
-|  | Congestion control context (CCC) | 拥塞控制上下文  | 用于控制两个 FEP 之间 RUD 和 ROD 流量的数据传输速率，有时一个 CCC 由多个 PDC 共享。 |
+|  | **Congestion control context (CCC)** | 拥塞控制上下文  | 用于控制两个 FEP 之间 RUD 和 ROD 流量的数据传输速率，有时一个 CCC 由多个 PDC 共享。 |
 |  | Congestion management sublayer (CMS) | 拥塞管理子层   | Ultra Ethernet Transport (UET) 协议中负责管理拥塞的部分。   |
 |  | Entropy value (EV) | 熵值 | 包头中的字段值（如 UDP 源端口），用于在 fabric 内负载均衡包的路径选择。 |
 |  | Fabric | Fabric 平面 | 一个或多个 fabric 平面。 |
 |  | Fabric address (FA) | Fabric 地址 | IPv4（RFC 791）或 IPv6（RFC 8200）地址。 |
-|  | Fabric endpoint (FEP)   | Fabric 端点 | 通过单一（分配的）FA 可寻址的逻辑实体。UE 传输协议及可选的安全上下文终止于 FEP。FEP 使用端口连接到 fabric，且仅能被单个 OSI 使用。一个节点可有多个 FEP。   |
+|  | Fabric endpoint (FEP)   | Fabric 端点 | 通过单一（分配的）FA 可寻址的逻辑实体。UE 传输协议及可选的安全上下文终止于 FEP。FEP 使用端口连接到 fabric，且仅能被单个 OSI 使用。FEP可以使用单个FA拥有多个端口，前提是每个端口都连接到完全隔离的 fabric 平面。一个节点可有多个 FEP。   |
 |  | Fabric path or path | Fabric 路径 | 包从源 FEP 到目的 FEP 传输经过的有序链路集合（节点和交换机跳数）。包可沿多条路径或多 fabric 平面传输。   |
 |  | Fabric plane or plane   | Fabric 平面 | 由 FEP、链路和交换机（可选）组成的集合，允许集合内任意 FEP 之间通信。不同 fabric 平面间通信超出本规范范围。 |
 |  | Folded Clos | 折叠 Clos | 一种由交叉开关组成的多级网络拓扑，也称为 fat tree。  |
