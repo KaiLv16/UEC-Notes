@@ -4,8 +4,11 @@
 笔记主要整理了规范中的关键点、理解与分析，方便日后复习和查阅。
 
 欢迎查阅以下核心笔记文件：
-- [UET-CC](Notes/UET-CC.md)  
+- [Abbreviations](Notes/Abbreviation.md)
+- [Terms](Notes/Terms.md)
+- [UET-CC (NSCC)](Notes/UET-CC.md)  
 - [Multipath Path Selection](Notes/multipath.md)
+
 
 
 ---
