@@ -78,30 +78,25 @@
 
 6. SES Response 被传递回 FEP-A 的 SES。
 
-![Figure 3-39 - Illustrated PDS Terms](../Figures/Figure-1-2-Example_Full_Header_Format.png)
+![Figure 3-39 - Illustrated PDS Terms](../Figures/Figure-3-39-Illustrated_PDS_Terms.png)
 
-下方的箭头表示相同的过程，但用于读请求（read request）的返回方向（return direction）。PDS ACK 不适用于拥塞控制。返回方向用于携带大型读响应数据包 —— 该路径为从目标方到发起方，并适用于拥塞控制。小型读响应数据可以像第 3.5.12.1 节所述一样，包含在 PDS ACK 中。
+下方的箭头表示读请求（read request）的返回方向（return direction）的相同过程。**PDS ACK 不适用于拥塞控制**。返回方向用于携带大型读响应数据包 —— 该路径为从目标方到发起方，并适用于拥塞控制。小型读响应数据可以像第 3.5.12.1 节所述一样，携带在 PDS ACK 中。
 
-请注意：大型读响应数据是在返回方向的 PDS Request 中传输的。这些数据包在图 3-39 中标记为 “SES Return Data”，在技术上它们属于 SES Responses，并使用 pds.next_hdr 字段，取值为 UET_HDR_RESPONSE_DATA 或 UET_HDR_RESPONSE_DATA_SMALL。
+请注意：大型读响应数据是在返回方向的 PDS Request 中传输的。这些数据包在图 3-39 中标记为 “SES Return Data”，在技术上它们属于 SES Responses，并使用 `pds.next_hdr` 字段，取值为 UET_HDR_RESPONSE_DATA 或 UET_HDR_RESPONSE_DATA_SMALL。
 
 PDS Request：在前向方向承载 SES Requests，在返回方向承载带数据的 SES Responses。
 
 PDS ACK：仅承载 SES Responses。
 
-在本节中：
-
-“SES request”（小写）表示 SES 通过 PDS Request 发起的数据包传输请求。
-
-“SES response”（小写）表示 SES 返回的响应，通过 PDS ACK 中继传输。
+在本节中，“SES request”（小写）表示 SES 通过 PDS Request 发起的数据包传输请求。“SES response”（小写）表示 SES 返回的响应，通过 PDS ACK 中继传输。
 使用小写字母是为了表示 PDS 的功能行为，而非 SES 的 next header 类型。
 
-说明性文本（Informative Text）：
+>说明性文本（Informative Text）：
 PDCID的引用方式有两种不同的视角。每个PDC都有一个发起方FEP和一个目标FEP。这些在PDC的整个生命周期中都是固定的。还有一个源FEP和目标FEP。它们是相对于发送数据包的FEP来说的。即：
-
-- IPDCID：由发起方 FEP 分配的 PDCID
-- TPDCID：由目标方 FEP 分配的 PDCID
-- SPDCID：由生成并发送数据包的 FEP 分配的 PDCID
-- DPDCID：由接收数据包的 FEP 分配的 PDCID
-- SPDCID 和 DPDCID 被携带在 PDS 报文头中，分别对应字段 pds.spdcid 和 pds.dpdcid
-
-![figure](../Figures/IT-3-5-2.png)
+> - IPDCID：由发起方 FEP 分配的 PDCID
+> - TPDCID：由目标方 FEP 分配的 PDCID
+> - SPDCID：由生成并发送数据包的 FEP 分配的 PDCID
+> - DPDCID：由接收数据包的 FEP 分配的 PDCID
+> - SPDCID 和 DPDCID 被携带在 PDS 报文头中，分别对应字段 `pds.spdcid` 和 `pds.dpdcid`
+> 
+> ![figure](../Figures/IT-3-5-2.png)
