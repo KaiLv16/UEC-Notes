@@ -6,7 +6,7 @@ Discussions and Contributions are very welcome!
 
 ---
 
-## 笔记文件列表：
+## 笔记文件列表 （Updates over time）：
 
 ## Chapter 1 Introduction
 ### [Abbreviations](Notes/Abbreviation.md)
