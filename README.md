@@ -22,7 +22,7 @@ Discussions and Contributions are very welcome!
 ### [Packet Delivery Services Overview](Notes/PDS.md)
 ### (TODO) 3.5.5 PDS Configuration Parameters
 ### [3.5.6 Reliability and Ordering](Notes/Reliability.md)
-### 3.5.7 Packet Delivery Modes Overview
+### [3.5.7 Packet Delivery Modes Overview](Notes/Packet-delivery-modes-overview.md)
 ### 3.5.8 Packet Delivery Contexts (PDC)
 ### 3.5.9 PDS Event State Machine
 ### 3.5.10 Header Formats
