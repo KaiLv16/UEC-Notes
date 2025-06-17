@@ -12,6 +12,8 @@ Discussions and Contributions are very welcome!
 ### [Abbreviations](Notes/Abbreviation.md)
 ### [Terms](Notes/Terms.md)
 
+![Figure 3-1 - Overview of UET](Figures/Figure-3-1.png)
+
 ![Figure 3-3 - Component Interface Overview](Figures/Figure-3-3.png)
 
 ## Section 3.5 Packet delivery Sublayer (PDS)
