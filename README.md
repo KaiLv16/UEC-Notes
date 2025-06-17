@@ -12,6 +12,8 @@ Discussions and Contributions are very welcome!
 ### [Abbreviations](Notes/Abbreviation.md)
 ### [Terms](Notes/Terms.md)
 
+![Figure 3-3 - Component Interface Overview](Figures/Figure-3-3.png)
+
 ## Section 3.5 Packet delivery Sublayer (PDS)
 
 数据包传输子层是超以太网传输（UET）协议中负责通过 IP/Ethernet 网络传输数据包的部分。该 packet dilivery 服务提供可靠性和顺序控制功能。PDS 作为 UET 中的一个子层，位于语义子层（SES）和传输安全子层（TSS）之间，如图3-38所示。
