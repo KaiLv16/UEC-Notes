@@ -51,7 +51,7 @@ PDS应避免在服务其他PDCs的同时，长时间饥饿共享同一流量类�
 ### 3.5.19 Sequence Diagrams
 
 
-### 3.5.20 Reliable Unordered Delivery
+### 3.5.20 [Reliable Unordered Delivery](Notes/RUD.md)
 
 
 ### 3.5.21 Reliable Ordered Delivery
